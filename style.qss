@@ -1,0 +1,40 @@
+QMainWindow{ background-color: #250040}
+QLabel { font-family: "URW Gothic L", "Segoe UI", Helvetica;
+	color: white 
+}
+QToolBar{ border: none;
+}
+QPushButton { 	font-size: 12pt;
+		font-family: "URW Gothic L", "Segoe UI", Helvetica;
+		color: white;
+		border-style: outset;
+		border-color: white;
+		border-width: 2px;
+		padding: 2px;
+		background-color: #250040;
+}
+
+QTableView { font-family: "URW Gothic L", "Segoe UI", Helvetica; 
+}
+
+QHeaderView::section{
+	border:1px;
+	border-color:white;
+	padding: 6px;
+	font-family: "URW Gothic L", "Segoe UI", Helvetica;
+	font-size: 12pt;
+	background-color: #250040;
+	color: white;
+}
+QHeaderView{ border: none; }
+QLineEdit { background-color: white;
+	    border: none;
+}
+QToolButton:disabled{ background-color: #250040; border: none;
+}
+QToolButton:hover{background-color: #2e8cef
+}
+QtoolButton:checked{background-color: white }
+
+
+
