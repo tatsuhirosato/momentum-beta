@@ -45,11 +45,11 @@ public:
         bool confirmed = index.data(TransactionTableModel::ConfirmedRole).toBool();
         QVariant value = index.data(Qt::ForegroundRole);
         QColor foreground = COLOR_ELSE;
-        if(qVariantCanConvert<QColor>(value))
+/*    if(qVariantCanConvert<QColor>(value))
         {
             foreground = qvariant_cast<QColor>(value);
         }
-
+*/
         painter->setPen(foreground);
         painter->drawText(addressRect, Qt::AlignLeft|Qt::AlignVCenter, address);
 
@@ -110,8 +110,8 @@ OverviewPage::OverviewPage(QWidget *parent) :
     connect(ui->listTransactions, SIGNAL(clicked(QModelIndex)), this, SLOT(handleTransactionClicked(QModelIndex)));
 
     // init "out of sync" warning labels
-    ui->labelWalletStatus->setText("(" + tr("Out of sync") + ")");
-    ui->labelTransactionsStatus->setText("(" + tr("Out of sync") + ")");
+    ui->labelWalletStatus->setText("Out of sync!");
+    ui->labelTransactionsStatus->setText("Out of sync!");
 
     // start with displaying the "out of sync" warnings
     showOutOfSyncWarning(true);

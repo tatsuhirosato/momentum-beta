@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'overviewpage.ui'
 **
-** Created: Sat Jan 25 23:20:12 2014
+** Created: Mon Jan 27 22:16:18 2014
 **      by: Qt User Interface Compiler version 4.8.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -76,7 +76,7 @@ public:
         label->setObjectName(QString::fromUtf8("label"));
         QFont font;
         font.setFamily(QString::fromUtf8("URW Gothic L"));
-        font.setPointSize(12);
+        font.setPointSize(11);
         font.setBold(false);
         font.setItalic(false);
         font.setWeight(50);
@@ -150,7 +150,13 @@ public:
 
         labelWalletStatus = new QLabel(frame);
         labelWalletStatus->setObjectName(QString::fromUtf8("labelWalletStatus"));
-        labelWalletStatus->setFont(font);
+        QFont font2;
+        font2.setFamily(QString::fromUtf8("URW Gothic L"));
+        font2.setPointSize(12);
+        font2.setBold(false);
+        font2.setItalic(false);
+        font2.setWeight(50);
+        labelWalletStatus->setFont(font2);
         labelWalletStatus->setStyleSheet(QString::fromUtf8("QLabel { color: red; }"));
 
         formLayout_2->setWidget(0, QFormLayout::FieldRole, labelWalletStatus);
@@ -169,7 +175,7 @@ public:
         frame_2 = new QFrame(OverviewPage);
         frame_2->setObjectName(QString::fromUtf8("frame_2"));
         frame_2->setStyleSheet(QString::fromUtf8("border-color: rgb(255, 255, 255);\n"
-"font: 25 12pt \"URW Gothic L\";\n"
+"font: 25 11pt \"URW Gothic L\";\n"
 "border-top-color: rgb(255, 255, 255);\n"
 "border-right-color: rgb(255, 255, 255);\n"
 "border-left-color: rgb(255, 255, 255);"));
@@ -181,20 +187,28 @@ public:
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         label_4 = new QLabel(frame_2);
         label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setStyleSheet(QString::fromUtf8("font: 25 13pt \"URW Gothic L\";"));
+        QFont font3;
+        font3.setFamily(QString::fromUtf8("URW Gothic L"));
+        font3.setPointSize(12);
+        font3.setBold(false);
+        font3.setItalic(false);
+        font3.setWeight(3);
+        label_4->setFont(font3);
+        label_4->setStyleSheet(QString::fromUtf8("font: 25 12pt \"URW Gothic L\";"));
 
         horizontalLayout_2->addWidget(label_4);
 
         labelTransactionsStatus = new QLabel(frame_2);
         labelTransactionsStatus->setObjectName(QString::fromUtf8("labelTransactionsStatus"));
-        QFont font2;
-        font2.setFamily(QString::fromUtf8("URW Gothic L"));
-        font2.setPointSize(12);
-        font2.setBold(false);
-        font2.setItalic(false);
-        font2.setWeight(3);
-        labelTransactionsStatus->setFont(font2);
-        labelTransactionsStatus->setStyleSheet(QString::fromUtf8("QLabel { color: red; }"));
+        QFont font4;
+        font4.setFamily(QString::fromUtf8("URW Gothic L"));
+        font4.setPointSize(11);
+        font4.setBold(false);
+        font4.setItalic(false);
+        font4.setWeight(3);
+        labelTransactionsStatus->setFont(font4);
+        labelTransactionsStatus->setStyleSheet(QString::fromUtf8("QLabel { color: red; }\n"
+"font: 12pt;"));
         labelTransactionsStatus->setText(QString::fromUtf8("out of sync!"));
         labelTransactionsStatus->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
@@ -210,6 +224,7 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(listTransactions->sizePolicy().hasHeightForWidth());
         listTransactions->setSizePolicy(sizePolicy);
+        listTransactions->setFont(font4);
         listTransactions->setStyleSheet(QString::fromUtf8("QListView { background: transparent; }"));
         listTransactions->setFrameShape(QFrame::NoFrame);
         listTransactions->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);

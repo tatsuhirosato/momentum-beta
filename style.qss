@@ -1,6 +1,6 @@
 QMainWindow{ background-color: #250040}
 QLabel { font-family: "URW Gothic L", "Segoe UI", Helvetica;
-	color: white 
+	color: white
 }
 QToolBar{ border: none;
 }
@@ -35,6 +35,10 @@ QToolButton:disabled{ background-color: #250040; border: none;
 QToolButton:hover{background-color: #2e8cef
 }
 QtoolButton:checked{background-color: white }
+
+QLabel:label_4{ font-size:13pt;}
+
+QFrame:{ border: none; }
 
 
 

@@ -44,7 +44,7 @@
             <property name="font">
              <font>
               <family>URW Gothic L</family>
-              <pointsize>12</pointsize>
+              <pointsize>11</pointsize>
               <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
@@ -60,7 +60,7 @@
             <property name="font">
              <font>
               <family>URW Gothic L</family>
-              <pointsize>12</pointsize>
+              <pointsize>11</pointsize>
               <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
@@ -85,7 +85,7 @@
             <property name="font">
              <font>
               <family>URW Gothic L</family>
-              <pointsize>12</pointsize>
+              <pointsize>11</pointsize>
               <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
@@ -101,7 +101,7 @@
             <property name="font">
              <font>
               <family>URW Gothic L</family>
-              <pointsize>12</pointsize>
+              <pointsize>11</pointsize>
               <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
@@ -126,7 +126,7 @@
             <property name="font">
              <font>
               <family>URW Gothic L</family>
-              <pointsize>12</pointsize>
+              <pointsize>11</pointsize>
               <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
@@ -142,7 +142,7 @@
             <property name="font">
              <font>
               <family>URW Gothic L</family>
-              <pointsize>12</pointsize>
+              <pointsize>11</pointsize>
               <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
@@ -161,7 +161,7 @@
             <property name="font">
              <font>
               <family>URW Gothic L</family>
-              <pointsize>12</pointsize>
+              <pointsize>11</pointsize>
               <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
@@ -177,7 +177,7 @@
             <property name="font">
              <font>
               <family>URW Gothic L</family>
-              <pointsize>12</pointsize>
+              <pointsize>11</pointsize>
               <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
@@ -245,7 +245,7 @@
       <widget class="QFrame" name="frame_2">
        <property name="styleSheet">
         <string notr="true">border-color: rgb(255, 255, 255);
-font: 25 12pt &quot;URW Gothic L&quot;;
+font: 25 11pt &quot;URW Gothic L&quot;;
 border-top-color: rgb(255, 255, 255);
 border-right-color: rgb(255, 255, 255);
 border-left-color: rgb(255, 255, 255);</string>
@@ -261,8 +261,17 @@ border-left-color: rgb(255, 255, 255);</string>
          <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
            <widget class="QLabel" name="label_4">
+            <property name="font">
+             <font>
+              <family>URW Gothic L</family>
+              <pointsize>12</pointsize>
+              <weight>3</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
             <property name="styleSheet">
-             <string notr="true">font: 25 13pt &quot;URW Gothic L&quot;;</string>
+             <string notr="true">font: 25 12pt &quot;URW Gothic L&quot;;</string>
             </property>
             <property name="text">
              <string>Recent transactions</string>
@@ -274,7 +283,7 @@ border-left-color: rgb(255, 255, 255);</string>
             <property name="font">
              <font>
               <family>URW Gothic L</family>
-              <pointsize>12</pointsize>
+              <pointsize>11</pointsize>
               <weight>3</weight>
               <italic>false</italic>
               <bold>false</bold>
@@ -284,7 +293,8 @@ border-left-color: rgb(255, 255, 255);</string>
              <string>The displayed information may be out of date. Your wallet automatically synchronizes with the momentum-beta network after a connection is established, but this process has not completed yet.</string>
             </property>
             <property name="styleSheet">
-             <string notr="true">QLabel { color: red; }</string>
+             <string notr="true">QLabel { color: red; }
+font: 12pt;</string>
             </property>
             <property name="text">
              <string notr="true">out of sync!</string>
@@ -303,6 +313,15 @@ border-left-color: rgb(255, 255, 255);</string>
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>URW Gothic L</family>
+            <pointsize>11</pointsize>
+            <weight>3</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
           </property>
           <property name="styleSheet">
            <string notr="true">QListView { background: transparent; }</string>

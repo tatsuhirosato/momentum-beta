@@ -140,7 +140,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     QFrame *frameBlocks = new QFrame();
     frameBlocks->setContentsMargins(0,0,0,0);
     frameBlocks->setMinimumWidth(128);
-    frameBlocks->setMaximumWidth(144);
+    frameBlocks->setMaximumWidth(204);
     QHBoxLayout *frameBlocksLayout = new QHBoxLayout(frameBlocks);
     frameBlocksLayout->setContentsMargins(3,0,3,0);
     frameBlocksLayout->setSpacing(0);
@@ -359,6 +359,7 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(changePassphraseAction);
     toolbar->addAction(signMessageAction);
     toolbar->addAction(backupWalletAction);
+    toolbar->addAction(optionsAction);
     toolbar->addAction(aboutAction);
 
 #ifdef FIRST_CLASS_MESSAGING
